@@ -43,6 +43,15 @@ public enum AppAssets {
         public static let toolbarBg = ImageAsset(name: "Icon/Unknown/toolbar_bg")
       }
     }
+    public enum Image {
+      public enum Brand {
+        public static let appLogo = ImageAsset(name: "Image/Brand/AppLogo")
+        public static let appLogoLabel = ImageAsset(name: "Image/Brand/AppLogoLabel")
+      }
+      public enum Splash {
+        public static let splashBackground = ImageAsset(name: "Image/Splash/SplashBackground")
+      }
+    }
     public enum EnUS {
       public enum Icon {
         public enum Unknown {
