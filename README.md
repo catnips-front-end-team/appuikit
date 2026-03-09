@@ -12,6 +12,12 @@
 
 ---
 
+## 📚 文档导航
+
+- **[AI 编程指南](AI_CODING_GUIDE.md)** - 为 AI 编程助手提供的详细编码规范、设计模式和最佳实践
+
+---
+
 ## 安装
 
 ### Swift Package Manager
