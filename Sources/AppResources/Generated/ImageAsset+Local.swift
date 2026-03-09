@@ -27,7 +27,11 @@
 //    nonisolated(unsafe) public static var loaderInterceptor:ImageAssetLoaderInterceptor?
 //}
 
+#if canImport(UIKit)
+import UIKit
+#elseif canImport(AppKit)
 import AppKit
+#endif
 
 
 /// spm xcassert文件会合并,所以不能是多个bundle
