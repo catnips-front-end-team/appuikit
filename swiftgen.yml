@@ -1,0 +1,20 @@
+xcassets:
+  inputs: [Sources/AppResources/Assets/Images.xcassets,Sources/AppResources/Assets/Colors.xcassets]
+  outputs:
+    #- templateName: swift5
+    - templatePath: Tools/SwiftGenTemplates/xcassets-swift5-runtime-imageasset.stencil
+      output: Sources/AppResources/Generated/AppAssets.swift
+      params:
+        #lookupFunction: switchLocalizationBundleDuringRuntime
+        forceNestedGroups: true
+        publicAccess: true
+        enumName: "AppAssets"      # <- 这里改成不冲突的名字
+files:
+  inputs:
+    - Sources/AppResources/Assets/Animations
+  outputs:
+    - templatePath: Tools/SwiftGenTemplates/files.stencil
+      output: Sources/AppResources/Generated/AppAnimations.swift
+      params:
+        publicAccess: true
+        enumName: "AppAnimations"
